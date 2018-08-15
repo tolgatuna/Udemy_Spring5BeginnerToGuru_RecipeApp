@@ -114,17 +114,16 @@ public class RecipeBootstrap implements ApplicationListener<ContextRefreshedEven
                 "For a deviled egg version with guacamole, try our Guacamole Deviled Eggs!");
         Notes guacNotes = new Notes();
         guacNotes.setRecipeNotes("Be careful handling chiles if using. Wash your hands thoroughly after handling and do not touch your eyes or the area near your eyes with your hands for several hours.");
-        guacNotes.setRecipe(guacRecipe);
         guacRecipe.setNotes(guacNotes);
 
-        guacRecipe.getIngredients().add(new Ingredient("ripe avocados", new BigDecimal(2), eachUom, guacRecipe));
-        guacRecipe.getIngredients().add(new Ingredient("asdsa", new BigDecimal(.5), teaSpoonUom, guacRecipe));
-        guacRecipe.getIngredients().add(new Ingredient("sacsavsa", new BigDecimal(2), tableSpoonUom, guacRecipe));
-        guacRecipe.getIngredients().add(new Ingredient("lkş", new BigDecimal(2), tableSpoonUom, guacRecipe));
-        guacRecipe.getIngredients().add(new Ingredient("işliş", new BigDecimal(22), eachUom, guacRecipe));
-        guacRecipe.getIngredients().add(new Ingredient("sqwe", new BigDecimal(.4), tableSpoonUom, guacRecipe));
-        guacRecipe.getIngredients().add(new Ingredient("oıpop", new BigDecimal(2), dashUom, guacRecipe));
-        guacRecipe.getIngredients().add(new Ingredient("21312132", new BigDecimal(3), eachUom, guacRecipe));
+        guacRecipe.getIngredients().add(new Ingredient("ripe avocados", new BigDecimal(2), eachUom));
+        guacRecipe.getIngredients().add(new Ingredient("asdsa", new BigDecimal(.5), teaSpoonUom));
+        guacRecipe.getIngredients().add(new Ingredient("sacsavsa", new BigDecimal(2), tableSpoonUom));
+        guacRecipe.getIngredients().add(new Ingredient("lkş", new BigDecimal(2), tableSpoonUom));
+        guacRecipe.getIngredients().add(new Ingredient("işliş", new BigDecimal(22), eachUom));
+        guacRecipe.getIngredients().add(new Ingredient("sqwe", new BigDecimal(.4), tableSpoonUom));
+        guacRecipe.getIngredients().add(new Ingredient("oıpop", new BigDecimal(2), dashUom));
+        guacRecipe.getIngredients().add(new Ingredient("21312132", new BigDecimal(3), eachUom));
 
         guacRecipe.getCategories().add(americanCategory);
         guacRecipe.getCategories().add(mexicanCategory);
@@ -148,17 +147,16 @@ public class RecipeBootstrap implements ApplicationListener<ContextRefreshedEven
                 "5 Assemble the tacos: Slice the chicken into strips. On each tortilla, place a small handful of arugula. Top with chicken slices, sliced avocado, radishes, tomatoes, and onion slices. Drizzle with the thinned sour cream. Serve with lime wedges.");
         Notes tacosNotes = new Notes();
         tacosNotes.setRecipeNotes("Look for ancho chile powder with the Mexican ingredients at your grocery store, on buy it online. (If you can't find ancho chili powder, you replace the ancho chili, the oregano, and the cumin with 2 1/2 tablespoons regular chili powder, though the flavor won't be quite the same.)");
-        tacosNotes.setRecipe(tacosRecipe);
         tacosRecipe.setNotes(tacosNotes);
 
-        tacosRecipe.getIngredients().add(new Ingredient("ripe avocados", new BigDecimal(2), eachUom, tacosRecipe));
-        tacosRecipe.getIngredients().add(new Ingredient("asdsa", new BigDecimal(.5), teaSpoonUom, tacosRecipe));
-        tacosRecipe.getIngredients().add(new Ingredient("sacsavsa", new BigDecimal(2), tableSpoonUom, tacosRecipe));
-        tacosRecipe.getIngredients().add(new Ingredient("lkş", new BigDecimal(2), tableSpoonUom, tacosRecipe));
-        tacosRecipe.getIngredients().add(new Ingredient("işliş", new BigDecimal(22), eachUom, tacosRecipe));
-        tacosRecipe.getIngredients().add(new Ingredient("sqwe", new BigDecimal(.4), tableSpoonUom, tacosRecipe));
-        tacosRecipe.getIngredients().add(new Ingredient("oıpop", new BigDecimal(2), dashUom, tacosRecipe));
-        tacosRecipe.getIngredients().add(new Ingredient("21312132", new BigDecimal(3), eachUom, tacosRecipe));
+        tacosRecipe.getIngredients().add(new Ingredient("ripe avocados", new BigDecimal(2), eachUom));
+        tacosRecipe.getIngredients().add(new Ingredient("asdsa", new BigDecimal(.5), teaSpoonUom));
+        tacosRecipe.getIngredients().add(new Ingredient("sacsavsa", new BigDecimal(2), tableSpoonUom));
+        tacosRecipe.getIngredients().add(new Ingredient("lkş", new BigDecimal(2), tableSpoonUom));
+        tacosRecipe.getIngredients().add(new Ingredient("işliş", new BigDecimal(22), eachUom));
+        tacosRecipe.getIngredients().add(new Ingredient("sqwe", new BigDecimal(.4), tableSpoonUom));
+        tacosRecipe.getIngredients().add(new Ingredient("oıpop", new BigDecimal(2), dashUom));
+        tacosRecipe.getIngredients().add(new Ingredient("21312132", new BigDecimal(3), eachUom));
 
         tacosRecipe.getCategories().add(americanCategory);
         tacosRecipe.getCategories().add(mexicanCategory);
