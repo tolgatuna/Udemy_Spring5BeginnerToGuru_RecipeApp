@@ -1,12 +1,14 @@
 package com.tt.spring5recipeapp.domain;
 
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
 
 @Data
+@EqualsAndHashCode(exclude = {"ingredients", "notes"}) // if we don't do that it will enter a loop because of created hash code contains both object
 @Entity
 public class Recipe {
 
@@ -52,9 +54,5 @@ public class Recipe {
     public void setNotes(Notes notes) {
         this.notes = notes;
         notes.setRecipe(this);
-    }
-
-    public Set<Category> getCategories() {
-        return categories;
     }
 }
