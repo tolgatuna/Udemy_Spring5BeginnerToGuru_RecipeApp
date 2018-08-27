@@ -127,17 +127,18 @@ public class RecipeBootstrap implements ApplicationListener<ContextRefreshedEven
         guacNotes.setRecipeNotes("Be careful handling chiles if using. Wash your hands thoroughly after handling and do not touch your eyes or the area near your eyes with your hands for several hours.");
         guacRecipe.setNotes(guacNotes);
 
-        guacRecipe.getIngredients().add(new Ingredient("ripe avocados", new BigDecimal(2), eachUom));
-        guacRecipe.getIngredients().add(new Ingredient("asdsa", new BigDecimal(.5), teaSpoonUom));
-        guacRecipe.getIngredients().add(new Ingredient("sacsavsa", new BigDecimal(2), tableSpoonUom));
-        guacRecipe.getIngredients().add(new Ingredient("lkş", new BigDecimal(2), tableSpoonUom));
-        guacRecipe.getIngredients().add(new Ingredient("işliş", new BigDecimal(22), eachUom));
-        guacRecipe.getIngredients().add(new Ingredient("sqwe", new BigDecimal(.4), tableSpoonUom));
-        guacRecipe.getIngredients().add(new Ingredient("oıpop", new BigDecimal(2), dashUom));
-        guacRecipe.getIngredients().add(new Ingredient("21312132", new BigDecimal(3), eachUom));
+        guacRecipe.addIngredient(new Ingredient("ripe avocados", new BigDecimal(2), eachUom));
+        guacRecipe.addIngredient(new Ingredient("asdsa", new BigDecimal(.5), teaSpoonUom));
+        guacRecipe.addIngredient(new Ingredient("sacsavsa", new BigDecimal(2), tableSpoonUom));
+        guacRecipe.addIngredient(new Ingredient("lkş", new BigDecimal(2), tableSpoonUom));
+        guacRecipe.addIngredient(new Ingredient("işliş", new BigDecimal(22), eachUom));
+        guacRecipe.addIngredient(new Ingredient("sqwe", new BigDecimal(.4), tableSpoonUom));
+        guacRecipe.addIngredient(new Ingredient("oıpop", new BigDecimal(2), dashUom));
+        guacRecipe.addIngredient(new Ingredient("21312132", new BigDecimal(3), eachUom));
 
         guacRecipe.getCategories().add(americanCategory);
         guacRecipe.getCategories().add(mexicanCategory);
+        guacRecipe.setUrl("http://www.blabla.com");
 
         recipes.add(guacRecipe);
 
@@ -160,14 +161,14 @@ public class RecipeBootstrap implements ApplicationListener<ContextRefreshedEven
         tacosNotes.setRecipeNotes("Look for ancho chile powder with the Mexican ingredients at your grocery store, on buy it online. (If you can't find ancho chili powder, you replace the ancho chili, the oregano, and the cumin with 2 1/2 tablespoons regular chili powder, though the flavor won't be quite the same.)");
         tacosRecipe.setNotes(tacosNotes);
 
-        tacosRecipe.getIngredients().add(new Ingredient("ripe avocados", new BigDecimal(2), eachUom));
-        tacosRecipe.getIngredients().add(new Ingredient("asdsa", new BigDecimal(.5), teaSpoonUom));
-        tacosRecipe.getIngredients().add(new Ingredient("sacsavsa", new BigDecimal(2), tableSpoonUom));
-        tacosRecipe.getIngredients().add(new Ingredient("lkş", new BigDecimal(2), tableSpoonUom));
-        tacosRecipe.getIngredients().add(new Ingredient("işliş", new BigDecimal(22), eachUom));
-        tacosRecipe.getIngredients().add(new Ingredient("sqwe", new BigDecimal(.4), tableSpoonUom));
-        tacosRecipe.getIngredients().add(new Ingredient("oıpop", new BigDecimal(2), dashUom));
-        tacosRecipe.getIngredients().add(new Ingredient("21312132", new BigDecimal(3), eachUom));
+        tacosRecipe.addIngredient(new Ingredient("ripe avocados", new BigDecimal(2), eachUom));
+        tacosRecipe.addIngredient(new Ingredient("asdsa", new BigDecimal(.5), teaSpoonUom));
+        tacosRecipe.addIngredient(new Ingredient("sacsavsa", new BigDecimal(2), tableSpoonUom));
+        tacosRecipe.addIngredient(new Ingredient("lkş", new BigDecimal(2), tableSpoonUom));
+        tacosRecipe.addIngredient(new Ingredient("işliş", new BigDecimal(22), eachUom));
+        tacosRecipe.addIngredient(new Ingredient("sqwe", new BigDecimal(.4), tableSpoonUom));
+        tacosRecipe.addIngredient(new Ingredient("oıpop", new BigDecimal(2), dashUom));
+        tacosRecipe.addIngredient(new Ingredient("21312132", new BigDecimal(3), eachUom));
 
         tacosRecipe.getCategories().add(americanCategory);
         tacosRecipe.getCategories().add(mexicanCategory);
