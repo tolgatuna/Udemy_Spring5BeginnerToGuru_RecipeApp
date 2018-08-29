@@ -44,7 +44,7 @@ public class RecipeServiceImplTest {
     }
 
     @Test
-    public void getRecipes() {
+    public void getRecipesTest() {
         Recipe recipe1 = new Recipe();
         recipe1.setId(1L);
         Recipe recipe2 = new Recipe();
@@ -62,5 +62,14 @@ public class RecipeServiceImplTest {
         // We verify that recipeRepository.findAll method called only 1 time!
         verify(recipeRepository, times(1)).findAll();
         verify(recipeRepository, never()).findById(anyLong());
+    }
+
+    @Test
+    public void testDeleteById() throws Exception{
+        Long idToDelete = Long.valueOf(2L);
+        recipeService.deleteById(idToDelete);
+
+        // no 'when', since method has void return type
+        verify(recipeRepository, times(1)).deleteById(anyLong());
     }
 }
